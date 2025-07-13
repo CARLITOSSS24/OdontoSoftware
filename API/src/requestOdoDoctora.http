@@ -1,0 +1,27 @@
+###
+
+POST http://localhost:5000/api/doctora HTTP/1.1
+Content-Type: application/json
+
+{
+  "Nombres": "Carol Daniela",
+  "apellidos": "Vargas",
+  "cargo": "Ortodoncista"
+}
+###
+GET http://localhost:5000/api/doctora HTTP/1.1
+
+###
+GET http://localhost:5000/api/doctora/6743f6206d5b69ad708e55dd HTTP/1.1
+###
+###
+PATCH  http://localhost:5000/api/doctora/6743f6206d5b69ad708e55dd HTTP/1.1
+Content-Type: application/json
+{
+  "Nombres": "Carol Daniela",
+  "apellidos": "Vargas",
+  "cargo": "Ortodoncista"
+}
+###
+DELETE http://localhost:5000/api/doctora/6743f6206d5b69ad708e55dd HTTP/1.1
+###

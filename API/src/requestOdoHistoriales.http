@@ -1,0 +1,33 @@
+###
+GET http://localhost:5000/api/historial
+Content-Type: application/json
+
+###
+
+### Crear un nuevo historial clínico
+POST http://localhost:5000/api/historial
+Content-Type: application/json
+
+  {
+    "id_historial": 1,
+    "Descripccion_tratamiento": "Limpieza dental",
+    "Fecha_tratamiento": "2024-08-29T00:00:00.000Z",
+  }
+
+###
+
+### Actualizar un historial clínico existente
+PATCH  http://localhost:5000/api/historial/6733fcc08802bdce0e31f166
+Content-Type: application/json
+
+ {
+    "id_historial": 1,
+    "Descripccion_tratamiento": "Limpieza dental",
+    "Fecha_tratamiento": "2024-08-29T00:00:00.000Z",
+  }
+
+###
+
+### Eliminar un historial clínico
+DELETE http://localhost:5000/api/historial/6733fcc08802bdce0e31f166
+Content-Type: application/json

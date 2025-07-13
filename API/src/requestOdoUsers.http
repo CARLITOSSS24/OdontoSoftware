@@ -1,0 +1,38 @@
+POST http://localhost:5000/api/users HTTP/1.1
+Content-Type: application/json
+
+    {
+    "Nombre": "carlos",
+    "Apellido": "alvarez",
+    "Tipo_Doc": "T.I",
+    "Doc_identificacion": 1025533382,
+    "Telefono": 3229496405,
+    "Correo": "carlitosojeda59@gmail.com",
+    "Clave": "lukas2404",
+    "Id_permiso":"6820f7a114cd039b43a1f666"
+    }
+
+###
+GET http://localhost:5000/api/users HTTP/1.1
+###
+GET http://localhost:5000/api/users/673fb00d8a2fefd872d8d51e HTTP/1.1
+
+###
+PATCH  http://localhost:5000/api/user/673fb00d8a2fefd872d8d51e HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "manuel",
+    "apellido": "galindo pena",
+    "Tipo_Doc": "T.I",
+    "Doc_identificacion": 1256444834,
+    "Telefono": 3227654097,
+    "correo": "manu@gmial.com",
+    "clave": "manuel123",
+    "Id_rol": 1,
+    }
+
+###
+DELETE http://localhost:5000/api/users/675990b9c4ed2511ebef6315 HTTP/1.1
+
+###
