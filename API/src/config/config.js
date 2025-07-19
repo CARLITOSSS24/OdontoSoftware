@@ -13,7 +13,7 @@ const config = {
   recoverySecret: process.env.RECOVERY_SECRET || 'recovery_secret_key',
   mailerUser: process.env.MAILER_USER,
   mailerPassword: process.env.MAILER_PASSWORD,
-  apiUrl: process.env.API_URL || 'http://localhost:5000/api',
+  apiUrl: process.env.API_URL || 'https://odontosoftware.onrender.com/api',
 };
 
 module.exports = config; 

@@ -2,7 +2,7 @@ import cors from "cors";
 
 const corsOptions = {
     origin: [
-        'https://odonto-software.vercel.app/'
+        'https://odonto-software.vercel.app'
     ],
     methods: 'GET,POST,PATCH,DELETE',
     allowedHeaders: ['Authorization', 'Content-Type'],
