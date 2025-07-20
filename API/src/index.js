@@ -21,6 +21,7 @@ dotenv.config();
 const app = express();
 
 app.use(corsConfig);
+app.options('*', corsConfig);
 
 app.use(express.json());
 

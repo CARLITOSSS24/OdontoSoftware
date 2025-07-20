@@ -17,6 +17,7 @@ import rutasOdoPassword from "./src/routes/rutasOdoPassword.js";
 events.setMaxListeners(20);
 
 dotenv.config();
+app.options('*', corsConfig);
 
 const app = express();
 
